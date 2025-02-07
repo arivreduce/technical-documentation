@@ -5,6 +5,10 @@ html {
   background-color: #14213d;
   color: #e5e5e5;
 }
+main {
+  display: flex;
+  min-height: 100vh;
+}
 *,
 *::before,
 *::after {
@@ -14,10 +18,15 @@ html {
   margin: 0;
 }
 aside {
-  /* border: 1px solid red; */
   width: 300px;
-  height: auto;
   min-height: 100vh;
+}
+#navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: inherit;
   border-right: 1px solid #fca311;
 }
 #navbar header {
@@ -29,7 +38,7 @@ header {
   font-size: 1.75rem;
   color: #ffffff;
 }
-ul {
+#navbar ul {
   list-style: none;
   padding-left: 0;
 }
@@ -50,6 +59,7 @@ a {
   left: 300px;
   top: 10px;
   padding: 20px 40px;
+  overflow-y: auto;
 }
 .main-section,
 .main-section header {
@@ -57,4 +67,8 @@ a {
 }
 p {
   padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+.main-section li {
+  margin-bottom: 1.5rem;
 }
