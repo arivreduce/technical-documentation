@@ -72,3 +72,9 @@ p {
 .main-section li {
   margin-bottom: 1.5rem;
 }
+code {
+  background-color: #e5e5e5;
+  color: black;
+  padding: 2px;
+  border-radius: 5px;
+}

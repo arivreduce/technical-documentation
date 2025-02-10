@@ -12,16 +12,26 @@
         <nav id="navbar">
           <header>React Documentation</header>
           <ul>
-            <li><a href="">Introduction</a></li>
-            <li><a href="">Prerequisites</a></li>
-            <li><a href="">JavaScript and React</a></li>
-            <li><a href="">Installing React</a></li>
-            <li><a href="">Hello World Component</a></li>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+            <li>
+              <a class="nav-link" href="#JavaScript_and_React"
+                >JavaScript and React</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="#Installing_React">Installing React</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#Hello_World_Component"
+                >Hello World Component</a
+              >
+            </li>
           </ul>
         </nav>
       </aside>
       <section class="main-sections">
-        <section class="main-section">
+        <section id="Introduction" class="main-section">
           <header>Introduction</header>
           <p>
             React is a popular JavaScript library for building user interfaces,
@@ -41,7 +51,7 @@
             experience.
           </p>
         </section>
-        <section class="main-section">
+        <section id="Prerequisites" class="main-section">
           <header>Prerequisites</header>
           <p>
             Before diving into React, it’s helpful to have a solid foundation in
@@ -66,15 +76,50 @@
             </li>
           </ul>
         </section>
-        <section class="main-section">
+        <section id="JavaScript_and_React" class="main-section">
           <header>JavaScript and React</header>
-          <p></p>
+          <p>
+            React is built entirely on JavaScript, making it essential to have a
+            solid understanding of the language before diving into React. React
+            leverages modern JavaScript (ES6+) features extensively, such as
+            arrow functions, destructuring, template literals, and modules.
+            These features not only make React code more concise and readable
+            but also enable developers to write more expressive and maintainable
+            components. For example, React components are often written as
+            JavaScript functions using arrow functions, and state management
+            relies heavily on concepts like closures and the useState hook.
+          </p>
+          <p>
+            One of the key differences between plain JavaScript and React is the
+            way UI updates are handled. In traditional JavaScript, you might
+            directly manipulate the DOM using methods like
+            document.getElementById or innerHTML. React, however, introduces a
+            declarative approach where you describe what the UI should look like
+            for a given state, and React takes care of updating the DOM
+            efficiently. This is made possible by React's virtual DOM, which
+            acts as a lightweight copy of the actual DOM and allows React to
+            batch updates and minimize performance bottlenecks.
+          </p>
+          <p>
+            Another important distinction is the use of JSX (JavaScript XML), a
+            syntax extension that allows you to write HTML-like code directly
+            within JavaScript. While JSX might look like HTML, it is actually
+            syntactic sugar for React.createElement calls, which are compiled
+            into JavaScript by tools like Babel. This blending of HTML and
+            JavaScript in JSX can feel unfamiliar at first, but it ultimately
+            simplifies the process of building and visualizing component
+            structures. For example, instead of writing verbose
+            React.createElement statements, you can write intuitive JSX like
+            <code
+              >&lt;div className="container"&gt;Hello World&lt;/div&gt;</code
+            >
+            .
+          </p>
         </section>
-        <section class="main-section">
+        <section id="Installing_React" class="main-section">
           <header>Installing React</header>
-          <p></p>
         </section>
-        <section class="main-section">
+        <section id="Hello_World_Component" class="main-section">
           <header>Hello World Component</header>
           <p></p>
         </section>
