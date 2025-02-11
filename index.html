@@ -122,10 +122,40 @@
             React Docs recommends picking one of the React-powered frameworks
             popular in the community to build a new app or website with React.
           </p>
+          <p>
+            The following frameworks support all the features you need to deploy
+            and scale your app in production and are working towards supporting
+            React's full-stack architecture vision. Their respective install
+            command is included as well:
+          </p>
+          <ul>
+            <li>Next.js - <code>npx create-next-app@latest</code></li>
+            <li>Remix - <code>npx create-remix</code></li>
+            <li>Gatsby - <code>npx create-gatsby</code></li>
+            <li>Expo - <code>npx create-expo-app</code></li>
+          </ul>
+          <p>
+            <strong>To install React on an existing project, run</strong>
+            <code>npm install react react-dom</code>
+          </p>
         </section>
         <section id="Hello_World_Component" class="main-section">
           <header>Hello World Component</header>
-          <p></p>
+          <p>
+            Now let's create your first component! Add the following code to
+            your main JavaScript file:
+          </p>
+          <div class="code-container">
+            <code>
+              1 import { createRoot } from 'react-dom/client'; <br />
+              2 // Clear the existing HTML content <br />
+              3 document.body.innerHTML = '&lt;div id="app"&gt;&lt;/div&gt;';
+              <br />
+              4 // Render your React component instead <br />
+              5 const root =createRoot(document.getElementById('app')); <br />
+              6 root.render(&lt;h1&gt;Hello, world&lt;/h1&gt;);
+            </code>
+          </div>
         </section>
       </section>
     </main>

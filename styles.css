@@ -78,3 +78,33 @@ code {
   padding: 2px;
   border-radius: 5px;
 }
+.code-container {
+  width: 475px;
+  background-color: #e5e5e5;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+@media screen and (max-width: 815px) {
+  aside {
+    width: 100%;
+    max-height: 275px;
+    min-height: 0;
+    position: relative;
+  }
+  #navbar {
+    position: relative;
+    height: 275px;
+    width: 100%;
+    overflow-y: auto;
+    border-right: none;
+  }
+  .main-sections {
+    left: 0;
+    top: 275px;
+    border-top: 3px solid #fca311;
+  }
+  #navbar li:last-of-type {
+    border-bottom: none;
+  }
+}
